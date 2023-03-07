@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            position: relative;
+        }
+        #main {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            background-color: #fff;
+            height: 700px;
+            align-items: center;
+            /* margin-top: -120px; */
+            transition: 2s;
+            position: absolute;
+            /* display: none; */
+            /* position: fixed; */
+        }
+        .inp-section {
+            display: flex;
+            flex-direction: column;
+            background-color: #3339;
+            width: 25rem;
+            height: 12rem;
+            margin: 1rem;
+            margin-left: 0rem;
+            margin-top: -15rem;
+        }
+        .inp-section h3 {
+            margin: 0;text-align: center;font-size: 1.7rem;
+            font-family: cursive;
+            margin-top: .5rem;
+        }
+        input {
+            padding: .5rem;
+            margin: 1rem;
+        }
+        .btn {
+            background: linear-gradient(red, rgb(79, 59, 98));
+            color: rgb(255, 221, 0);
+            padding: .2rem;
+            margin: 1rem;
+        }
+
+        /* main content design */
+
+        .main-con {
+            margin: .8rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+        .main-con img {
+            height: 6rem;
+            margin: 1rem;
+        }
+        .main-con h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.2rem;
+            margin-top: 1px;
+            text-shadow: 1px 1px 10px #333;
+        }
+        .main-con h3{
+            font-size: .9rem;
+            margin: -.1rem;
+            margin-bottom: 1.3rem;
+            background-color: #ffff00;
+            padding: .3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .main-con p {
+            margin: 0;
+            font-size: 1rem;
+            font-family: Arial, Helvetica, sans-serif;
+            letter-spacing: 5px;
+            margin-bottom: 4px;
+        }
+        span {
+            font-size: 1.4rem;
+            color: rgb(162, 255, 0);
+            text-shadow: 5px 5px 10px #000000, -5px -5px 10px #000000;
+        }
+        hr{
+            height: .3rem;
+            width: 15rem;
+            border-radius: 50%;
+            margin: 1rem;
+            margin-top: -1px;
+            background-color: red;
+        }
+        .main-con .sayari {
+            letter-spacing: 0;
+        }
+        .about-us {
+            background-color: #d3f9ff;
+            margin: 2rem;
+            padding: 1rem;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .content h4 {
+            margin: 0;
+            font-size: 1.5rem;
+        }
+        .content h5 {
+            font-size: 1rem;
+            margin: .9rem;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;           
+        }
+        .content button {
+            width: 100%;
+            background-color: #59ff00;
+            border: none;
+            margin-top: .8rem;
+            padding: .5rem;
+            box-shadow: 1px 1px 5px #000000;
+        }
+        .link {
+            display: flex;
+            background-color: #000000;
+            justify-content: space-between;
+            position: relative;
+        }
+        .link p {
+            color: white;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: .7rem;
+            margin: 1rem;
+        }
+        .link ul a {
+            color: white;
+            font-size: 1.1rem;
+            margin-right: .1rem;
+        }
+        .btn-get {
+            width: 100%;
+            background-color: #00ffd9;
+            border: none;
+            margin-top: rem;
+            margin-bottom: 2rem;
+            padding: .5rem;
+            font-weight: 600;
+            box-shadow: 1px 1px 5px #000000;
+            border-radius: 20px;
+        }
+        #certi {
+            background-color: #fff;
+            position: absolute;
+            z-index:100;
+            /* margin-top: 300px; */
+            height: 500px;
+        }
+        .btn-1 {
+            margin: 5rem;
+            margin-top: 3rem;
+            margin-left: 2rem;
+            position: absolute;
+            background-color: rgb(255, 255, 0);
+            padding: .4rem;
+            width: 80%;
+        }
+        .c-name {
+            position: absolute;
+            width: 540px;
+            height: 35px;
+            margin-top: 14.8rem;
+            margin-left: 5rem;
+            /* background-color: #000000; */
+            /* color: white; */
+            display: flex;
+            justify-content: center;
+        }
+        .c-name h3 {
+            position: absolute;
+            z-index: 10;
+            font-size: 1.8rem;
+            margin: 0;
+            font-family:cursive;
+        }
+    </style>
+</head>
+<body style="background-color: #fefdfd;" id="body" >
+
+<section class="certificate" id="certi"> 
+    <div id="cer-image">
+    <div class="c-name">
+        <h3 id="u-name">Refresh and enter name</h3>
+       </div>
+        <img src="https://i.ibb.co/yqXDBGP/certificate.jpg" alt="certificate" height="510px" style="position: relative; z-index: -1;">
+    </div>
+   <br>
+    <button  class="btn-1" onclick="get()">Download</button>
+</section>
+
+
+    <section class="middle" id="main">
+        <div class="inp-section" id="div">
+            <h3>Welcome</h3>
+            <input type="text" name="name" id="name" placeholder="Enter Full Name">
+            <button onclick="hidediv()" class="btn">Next</button>
+        </div>
+    </section>
+    <section class="main-con">
+
+        <img src="https://i.ibb.co/7W0khFD/sonu1.png" alt="sonu1">
+        <p>Happy Holi from</p>
+        <h2><span>S </span>ONU  <span>S </span>AGAR </h2>
+        <hr>
+        <h3  id="user-name"> Refresh and enter name </h3>
+        <hr>
+        <img src="https://media.tenor.com/Qi5V2-hS0HcAAAAC/daswaniholi-happyholi.gif" alt="" height="500px" style="border-radius: 10%; margin-bottom: 2rem;">
+        <p class="sayari">
+ देते है आपको हम दिल से ये दुआएं,<br>
+होली के रंग आपके जीवन में भर जाएं,<br>
+आपके सभी सपने चुटकी में पूरे हो,<br>
+आपके जीवन में दुःख कभी न आए।
+        </p>
+        <img src="https://media.tenor.com/ASC1RgXcL7AAAAAC/ranjanholi.gif" width="170px"  style="margin: 1.7rem;" alt="">
+
+        <img src="https://media.tenor.com/F8iTrjI4jOMAAAAC/happy-holi-%E0%A4%B9%E0%A5%88%E0%A4%AA%E0%A5%8D%E0%A4%AA%E0%A5%80%E0%A4%B9%E0%A5%8B%E0%A4%B2%E0%A5%80.gif" alt="">
+
+        <img src="https://media.tenor.com/R0gx09nIlYQAAAAC/happy-holi-to-you-all-%E0%A4%B9%E0%A5%88%E0%A4%AA%E0%A5%8D%E0%A4%AA%E0%A5%80%E0%A4%B9%E0%A5%8B%E0%A4%B2%E0%A5%80.gif" alt="">
+
+    </section>
+    <section class="about-us">
+
+        <div class="content">
+            <h4>OUR SERVICES</h4>
+            <h5><u>Our Websites</u></h5>
+            <button onclick="window.location.href = 'https://59notes.blogspot.com/'">59notes</button>
+            <button onclick="window.location.href = 'https://59story.blogspot.com/'">59story</button>
+            <button onclick="window.location.href = 'https://dadagstore.blogspot.com/'">Dada G Store</button>
+            <h5><u>Our Youtube Channels</u></h5>
+            <button onclick="window.location.href = 'https://www.youtube.com/@59code'">59 Code</button>
+            <button onclick="window.location.href = 'https://www.youtube.com/@59relax '">59 Relax</button>
+            <button onclick="window.location.href = 'https://www.youtube.com/@lakkhamusicpresent5665'">LKA Music</button>
+            <button onclick="window.location.href = 'https://www.youtube.com/@suhanisagarofficial'">The K-pop Suhani</button>
+        </div>
+        
+    </section>
+
+   <center>
+    <img src="https://media0.giphy.com/media/mhYJzqzWbrCVIUbwXL/giphy.gif?cid=ecf05e47rpjch301ksfxlii5z7vg20c1k6imq7wd1ofixpgc&rid=giphy.gif&ct=g" height="150px" alt="" style="margin-bottom: 1rem;">
+   </center>
+   <p>Click करने के बाद ऊपर जाए और Certificate Download करले </p>
+    <button onclick="certificate()" class="btn-get">Get Free Certificate</button>
+
+    <section class="link">
+        <p>Design By - Sonu Sagar</p>
+        <ul>
+            <a href="https://www.facebook.com/sonusagarimamganj"><i class='bx bxl-facebook-circle'></i></a>
+            <a href="https://www.instagram.com/sonusagarcse/"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://github.com/sonusagarcse"><i class='bx bxl-github'></i></a>
+            <a href="https://www.youtube.com/@59code"><i class='bx bxl-youtube'></i></a>
+        </ul>
+    </section>
+
+    <!-- <audio src="https://djfactory.mobi/files/download/id/37563/Balam%20Pichkari%20Clap%20House%20Mix%20-%20DJ%20SARFRAZ.html" autoplay loop></audio> -->
+
+
+    <script>
+
+        const Certificate = document.getElementById("certi").innerHTML
+        const Body = document.getElementById("body").innerHTML
+        
+        // input design
+
+        var input;
+    function hidediv() {
+        document.getElementById("main").style.marginTop = "-700px";
+         input = document.getElementById("name").value;
+        if(input == 0)
+        {
+        }else{
+            document.getElementById("user-name").innerHTML = input
+        }
+    }
+    
+        // certificate part 
+
+        document.getElementById("certi").style.marginTop = "-700px";
+
+    function certificate() {
+
+        document.getElementById("body").innerHTML = Certificate
+
+        if(input == 0)
+        {
+        }else{
+            document.getElementById("u-name").innerHTML = input
+        }
+    }
+
+    // print and download part 
+
+    // document.getElementById("body").innerHTML = Certificate
+
+    function get() {
+      
+        // document.getElementById("body").innerHTML = download
+        window.print()
+        // document.getElementById("body").innerHTML = Body
+
+    }
+
+    </script>
+</body>
+</html>
