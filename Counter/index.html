@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="style.css">        
+</head>
+<body>
+    <div class="containor">
+        <div class="counter" id="value">0</div>
+        <div class="button">
+            <button onclick="decrement()">Decrement</button>
+            <button onclick="increment()">Increment</button>
+        </div>
+        <p>design by sonu sagar</p>
+    </div>
+
+    <script>
+        var number = document.getElementById("value");
+        var i=0;
+        
+        //Function for increment
+        function increment() {
+            i++;
+            number.innerHTML = i;
+        }
+        function decrement() {
+            i--;
+            number.innerHTML = i;
+        }
+    </script>
+</body>
+</html>
