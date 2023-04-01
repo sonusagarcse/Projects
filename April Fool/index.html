@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>April Fool</title>
+</head>
+<body id="body">
+    <div class="login" id="login">
+        <h3>Enter Password</h3>
+        <p id="invalid" style="color:red; text-align: center; margin-bottom: 1rem;"></p>
+        <input type="text" id="input" placeholder="sonu sagar">
+        <button onclick="login()">Unlock</button>
+    </div>
+ <h2 id="header">Free VVI quesion BY sonu sagar</h2>
+ 
+ <div id="main">
+    <div class="contaner">
+        <div class="pdf1">
+            <center><img src="discrete-mathematics-tutorial.png" alt=""> </center>
+            <div class="content">
+                <h3>Descrete Math</h3>
+                <p>It is a subject of Cse Branch 3rd Sem. You Can Download vvi Objective and subjective question. Who Release by sonu sagar</p>
+            </div>
+            <button onclick="lol()">View</button>
+        </div>
+        <div class="pdf1">
+            <center><img src="c.jpeg" alt="" height="170px"> </center>
+            <div class="content">
+                <h3>C-programing</h3>
+                <p>It is a subject of Cse Branch 3rd Sem. You Can Download vvi Objective and subjective question. Who Release by sonu sagar</p>
+            </div>
+            <button onclick="lol()">View</button>
+        </div>
+        <div class="pdf1">
+            <center><img src="de&m.jpeg" alt=""> </center>
+            <div class="content">
+                <h3>Digital E & M</h3>
+                <p>It is a subject of Cse Branch 3rd Sem. You Can Download vvi Objective and subjective question. Who Release by sonu sagar</p>
+            </div>
+            <button onclick="lol()">View</button>
+        </div>
+        <div class="pdf1">
+            <center><img src="Computer-Organization-Book-Hamacher.png" alt=""> </center>
+            <div class="content">
+                <h3>Digital E & M</h3>
+                <p>DE&M stand for Digital Electronics and Microprocessor. It is a subject of Cse Branch 3rd Sem. You Can Download vvi Objective and subjective question. Who Release by sonu sagar</p>
+            </div>
+            <button onclick="lol()">View</button>
+        </div>
+        <div class="pdf1">
+            <center><img src="webtech.jpg" alt="" width="200px" class="last"></center>
+            <div class="content">
+                <h3>Digital E & M</h3>
+                <p>It is a subject of Cse Branch 3rd Sem. You Can Download vvi Objective and subjective question. Who Release by sonu sagar</p>
+            </div>
+            <button onclick="lol()">View</button>
+        </div>
+    
+     </div>
+ </div>
+
+ <!-- //prank part -->
+
+    <div class="prank" id="prank">
+        <h1>LOL !!</h1>
+        <p>मूर्ख बनने के लिए धन्यवाद</p>
+        <center><img src="https://media0.giphy.com/media/fLFwwmjKh46kw/giphy.gif?cid=ecf05e47xtu5k0zjm3sukk1emx6ot6r40xrsfzg17vchpn27&rid=giphy.gif&ct=g" alt="Pagal"></center>
+        <p>तुझे रब ने बनाया कितना सोना,<br>
+
+            जी करे देखता रहूँ,<br>
+            
+            तुझे अप्रैल फूल बनाऊं<br>
+            
+            और हँसता रहूँ…</p>
+        <center><img src="https://media1.giphy.com/media/126OMdMaXFWLL2/giphy.gif?cid=ecf05e4709nd44g5ftp0y2khxvn19yx3xqkc5j5y5q71jv18&rid=giphy.gif&ct=g" alt="Murkh"></center>
+            <br><br>
+        <h3>design by sonu sagar</h3>
+    </div>
+
+    <audio src="Tiktok Laughing Sound.mp3" loop id="music"></audio>
+    <script>
+
+        // login page part
+        function login() {
+            let input = document.getElementById('input').value;
+        let lower = input.toLowerCase();
+        if(lower == "sonu sagar") {
+            document.getElementById('login').style.marginTop = "-500px";
+            document.getElementById('main').style.display = "block";
+        } else {
+            document.getElementById('invalid').innerHTML = "Invalid";
+        }
+        }
+
+        // prank part
+
+        function lol() {
+       
+            document.getElementById('main').style.display = "none";
+            document.getElementById('header').style.display = "none";
+            document.getElementById('prank').style.display = "block";
+
+        //music part 
+
+        let music = document.getElementById('music');
+        music.play();
+
+        }
+
+        
+    </script>
+</body>
+</html>

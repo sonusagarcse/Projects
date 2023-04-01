@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #629c9a;
+}
+body h2 {
+    text-align: center;
+    margin: 2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #00e5ff;
+    padding: 4rem;
+    border-radius: 20px;
+}
+.login h3 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.login input {
+    padding: .5rem;
+    width: 18rem;
+}
+.login button {
+    margin-top: 1rem;
+    height: 2.3rem;
+    font-weight: 600;
+    transition: 1s;
+}
+.login button:hover {
+    background-color: #77ff00;
+}
+
+
+.contaner {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    /* display: none; */
+    /* position: relative; */
+}
+#main {
+    display: none;
+}
+.contaner .pdf1 {
+    background-color: #c6f4f0;
+    width: 50%;
+    margin: 1rem;
+    padding: 1.5rem;
+    flex: 1 1 150px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.content h3 {
+    text-align: center;
+    margin: 1rem;
+    letter-spacing: .1rem;
+}
+.content p {
+    text-align: center;
+}
+.pdf1 button {
+    justify-content: center;
+    margin-top: 2rem;
+    height: 2rem;
+    transition: .5s;
+}
+.pdf1 button:hover {
+    background-color: greenyellow;
+}
+
+/* //prank part  */
+
+.prank {
+    text-align: center;
+    font-weight: 600;
+    margin: 2rem;
+    display: none;
+    /* position: absolute; */
+}
+.prank h1 {
+    font-size: 5rem;
+    
+    margin: 1rem;
+    animation: color infinite ease-in .5s;
+}
+
+@keyframes color {
+    0% {
+        text-shadow: 2px 2px 10px red,-2px -2px 10px red;
+        color: rgb(140, 255, 0);
+    }
+    50% {
+        color: rgb(255, 0, 0);
+        text-shadow: 2px 2px 10px rgb(238, 255, 0),-2px -2px 10px rgb(238, 255, 0);
+
+    }
+}
+.prank p {
+    color: rgb(255, 255, 255);
+    margin: 1rem;
+}
+.prank img {
+    height: 180px;
+}
+.prank h3 {
+    text-transform: uppercase;
+    opacity: .5;
+}
