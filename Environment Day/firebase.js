@@ -69,10 +69,11 @@ const firebaseConfig = {
             
 
             value = "<span>"+ name+"</span>" + " ,"  +"Total tree Planted : " + "<span>" +treeno+ "</span>" + "</br>";
-            document.getElementById('detail').innerHTML+= value;
+            var detail = document.getElementById('detail');
+            detail.innerHTML += value;
 
-            TotalPerson += 1;
-            TotalTree += Number(treeno);
+                TotalPerson += 1;
+                TotalTree += Number(treeno);
 
             
         });

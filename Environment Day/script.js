@@ -14,6 +14,8 @@ let NumberOfTree = document.getElementById('treeno');
 
        function plant() {
            InputDiv = document.getElementById('inpNumber');
+           Con_Div = document.getElementById('con_div');
+           
            if (Name.value == '' || NumberOfTree.value == '') {
                alert('Please enter Name and Number of Tree');
            }else  if(NumberOfTree.value > 50) {
@@ -21,6 +23,7 @@ let NumberOfTree = document.getElementById('treeno');
            }else {
                InputDiv.style.display = "none";
                credit.style.display = "block";
+               Con_Div.style.display = "block";
            }
            paragraph.innerHTML = Name.value + ' planted ' + NumberOfTree.value + ' trees';
 
