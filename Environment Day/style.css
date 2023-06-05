@@ -1,0 +1,141 @@
+html {
+    font-size: 2rem;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body {
+    background-color: #d5f7c7;
+  }
+  .inpNumber {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #00d0ff;
+    animation: animate 5s infinite linear;
+    /* display: none; */
+  }
+  @keyframes animate {
+    0% {
+      background-color: #fff;
+    }
+    20% {
+      background-color: #ff5353;
+    }
+    40% {
+      background-color: #1aff00;
+    }
+    50% {
+      background-color: #66ff69;
+    }
+    60% {
+      background-color: #1170ff;
+    }
+    80% {
+      background-color: #ffb700;
+    }
+    100% {
+      background-color: #ff11cb;
+    }
+  }
+  .form {
+    background-color: #00ff7b;
+    box-shadow: 2px 2px 5px #000;
+    min-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+  }
+  .form h2 {
+    text-align: center;
+    font-size: 0.3rem;
+    padding: 0.5rem 0px;
+  }
+  .form input {
+    margin: 4px 0px;
+    padding: 7px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 5px #000;
+    width: 80%;
+    font-size: 0.4rem;
+  }
+  .form button {
+    background-color: #ff00ee;
+    padding: 0.2rem;
+    margin: 13px 0px;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    transition: 0.7s;
+  }
+  .form button:hover {
+    color: #ff00ee;
+    background-color: #00ff00;
+    box-shadow: 3px 3px 5px #ff00ee;
+  }
+
+  .title {
+    width: 100%;
+    background-color: #09ff00;
+    box-shadow: 3px 3px 5px #000;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  h3 {
+    font-size: 0.3rem;
+    color: rgb(0, 60, 255);
+  }
+  h1 {
+    font-size: 0.6rem;
+    margin: 2px 0px;
+    text-transform: uppercase;
+  }
+  #number {
+    font-size: 0.5rem;
+    margin: 3px 0px;
+    text-align: center;
+    padding: 8px;
+  }
+  .main {
+    width: 100%;
+    min-height: 0vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+  .plant {
+    box-shadow: 2px 2px 5px #000;
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .plant img {
+    height: 4rem;
+  }
+
+  .credit {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+    display: none;
+}
+.credit h4 {
+      opacity: .5;
+      font-size: .3rem;
+      text-transform: uppercase;
+  }
+  .credit img {
+    height: 2.5rem;
+  }
