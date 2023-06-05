@@ -11,9 +11,13 @@
     <div class="inpNumber" id="inpNumber">
       <div class="form">
         <h2>Enter Quantity of Tree do you want to plant</h2>
-        <input type="text" name="" id="name" placeholder="Enter Name" />
+
+        <form action="" id="form">
+          <input type="text" name="" id="name" placeholder="Enter Name" />
         <input type="number" name="" id="treeno" placeholder="Number of Tree" />
-        <button onclick="plant()">Plant the tree</button>
+        <button onclick="plant()" type="submit">Plant the tree</button>
+        </form>
+
       </div>
     </div>
     <div class="title">
@@ -23,12 +27,25 @@
     <p id="number">fffff</p>
     <div class="main" id="main"></div>
 
+    
+    <div class="detail">
+      <fieldset>
+        <legend>Planted Tree</legend>
+        <h3 id="detail"></h3>
+      </fieldset>
+    </div>
+    
+    
+    <h3 class="share">Share Other for more plant of tree</h3>
+
+    <!-- Credit Part -->
     <div class="credit" id="credit">
         <img src="https://yt3.ggpht.com/zaYGJJZQJy_GnGQ5PQ8o3Y8cboxruvR69furMaO-cYYbCHtLIBWw3E5q0eWeOiC_2JCnGW_tfXCUYg=s1024-c-fcrop64=1,00000041ffffffc7-nd-v1" alt="">
         <h4>Created By - Sonu sagar</h4>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="script.js"></script>
+    <script src="firebase.js"></script>
   </body>
 </html>

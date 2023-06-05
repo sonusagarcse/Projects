@@ -48,6 +48,7 @@ html {
     background-color: #00ff7b;
     box-shadow: 2px 2px 5px #000;
     min-width: 80%;
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +61,7 @@ html {
     padding: 0.5rem 0px;
   }
   .form input {
-    margin: 4px 0px;
+    margin: 4px 25px;
     padding: 7px;
     border-radius: 10px;
     border: none;
@@ -71,7 +72,7 @@ html {
   .form button {
     background-color: #ff00ee;
     padding: 0.2rem;
-    margin: 13px 0px;
+    margin: 13px 25px;
     width: 80%;
     border-radius: 10px;
     border: none;
@@ -122,12 +123,12 @@ html {
     align-items: center;
   }
   .plant img {
-    height: 4rem;
+    height: 3rem;
   }
 
   .credit {
     width: 100%;
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     display: none;
 }
@@ -138,4 +139,31 @@ html {
   }
   .credit img {
     height: 2.5rem;
+  }
+
+  /* Get data from database detail  */
+
+  .detail {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .detail h3 {
+    font-size: .4rem;
+    color: red;
+    margin: 1rem 0px;
+  }
+  .detail fieldset {
+    margin: 1rem;
+
+  }
+  .detail fieldset legend {
+    font-size: .6rem;
+    margin-left: -1.5rem;
+  }
+
+  .share {
+    text-align: center;
+    color: #ff00ee;
+    font-size: .4rem;
   }
