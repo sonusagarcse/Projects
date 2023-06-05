@@ -151,19 +151,34 @@ html {
   .detail h3 {
     font-size: .4rem;
     color: red;
-    margin: 1rem 0px;
+    margin: 1rem 5px;
+  }
+  .detail h3 span {
+    color: #000dff;
   }
   .detail fieldset {
-    margin: 1rem;
-
+    margin: .2rem;
+    min-width: 95%;
   }
   .detail fieldset legend {
     font-size: .6rem;
-    margin-left: -1.5rem;
+    margin-left: 1rem;
   }
 
   .share {
     text-align: center;
     color: #ff00ee;
     font-size: .4rem;
+  }
+
+  .info h3 {
+    text-align: center;
+    font-size: .6rem;
+    margin-bottom: .4rem;
+  }
+  .info p {
+    font-size: .4rem;
+ text-align: center;
+    color: #000dff;
+    margin-bottom: 1rem;
   }

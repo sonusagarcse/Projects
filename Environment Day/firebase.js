@@ -50,6 +50,10 @@ const firebaseConfig = {
 
   // Function for get the data
 
+  var TotalPerson = 0;
+  var TotalTree = 0;
+//   var TotalValue = 0;
+
   function getData() {
     user_name = document.getElementById("name").value;
     firebase.database().ref("name/" + user_name).on('value', function(snapshot){
@@ -62,10 +66,19 @@ const firebaseConfig = {
 
             console.log("name: " + name, + "treeno: " + treeno);
 
-            value = "Name : " +  name + " ,"  +"Total tree Plant : " + treeno + "</br>";
-            document.getElementById('detail').innerHTML += value;
-        });
-    });
-  }
+            
 
-  getData();
+            value = "<span>"+ name+"</span>" + " ,"  +"Total tree Planted : " + "<span>" +treeno+ "</span>" + "</br>";
+            document.getElementById('detail').innerHTML+= value;
+
+            TotalPerson += 1;
+            TotalTree += Number(treeno);
+
+            
+        });
+        document.getElementById('info').innerHTML = "Total People : " + TotalPerson;
+        document.getElementById('Ttree').innerHTML = "Total Tree : " + TotalTree;
+    });
+}
+
+getData();
