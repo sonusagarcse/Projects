@@ -2,7 +2,7 @@ let SongDetail = [
     {
         title : "Tere Vaste Falak...",
         image : "Images/terevaste.jpg",
-        song : "Audio/Tere-Waste-Falak-Se-Chand-Launga(PaglaSongs).mp3"
+        song : "https://pagalworld.network/dlod/3215"
     },
     {
         title : "Dokha Arijit Singh",
