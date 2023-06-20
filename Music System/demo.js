@@ -11,8 +11,8 @@ let SongDetail = [
     },
     {
         title : "Zihaal e Miskin",
-        image : "https://www.pagalworld.com.se/siteuploads/thumb/sft134/66663_4.jpg",
-        song : "https://www.pagalworld.com.se/files/download/id/66663"
+        image : "Images/zihaal.jpg",
+        song : "https://pagalworld.network/dlod/3237"
     },
     {
         title : "Falak Tak Chal",
@@ -22,7 +22,7 @@ let SongDetail = [
     {
         title : "Desh Mera",
         image : "Images/I0-IiiVgvyU-HQ.webp",
-        song : "https://www.pagalworld.com.se/files/download/id/3254"
+        song : "https://pagalsong.in/uploads/systemuploads/mp3/Bhuj%20The%20Pride%20Of%20India/Desh%20Mere%20-%20Bhuj%20The%20Pride%20Of%20India%20128%20Kbps.mp3"
     },
     {
         title : "Kajra Mohabat Wala",
@@ -31,8 +31,8 @@ let SongDetail = [
     },
     {
         title : "Kya Loge Tum..",
-        image : "https://www.pagalworld.com.se/siteuploads/thumb/sft134/66592_4.jpg",
-        song : "https://www.pagalworld.com.se/files/download/id/66592"
+        image : "https://pagalfree.com/images/128Kya%20Loge%20Tum%20-%20B%20Praak%20128%20Kbps.jpg",
+        song : "https://pagalfree.com/musics/128-Kya%20Loge%20Tum%20-%20B%20Praak%20128%20Kbps.mp3"
     },
 ];
 
