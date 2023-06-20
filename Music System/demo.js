@@ -1,13 +1,18 @@
 let SongDetail = [
     {
+        title : "Tere Vaste Falak...",
+        image : "https://www.pagalworld.com.se/siteuploads/thumb/sft134/66738_4.jpg",
+        song : "https://www.pagalworld.com.se/files/download/id/66738"
+    },
+    {
         title : "Dokha Arijit Singh",
         image : "Images/dhokha.webp",
         song : "Audio/Arijit Singh - Dhokha(PagalWorld.com.se) lofi.mp3"
     },
     {
-        title : "Bholi si Surat",
-        image : "Images/download.jpeg",
-        song : "https://pagalsong.in/uploads/systemuploads/mp3/Dil%20To%20Pagal%20Hai/Bholi%20Si%20Surat.mp3"
+        title : "Zihaal e Miskin",
+        image : "https://www.pagalworld.com.se/siteuploads/thumb/sft134/66663_4.jpg",
+        song : "https://www.pagalworld.com.se/files/download/id/66663"
     },
     {
         title : "Falak Tak Chal",
@@ -23,6 +28,11 @@ let SongDetail = [
         title : "Kajra Mohabat Wala",
         image : "Images/kajra.jpg",
         song : "Audio/Kajra Mohobbat Wala - (Slowed Reverb) PSNT MUSIC.mp3"
+    },
+    {
+        title : "Kya Loge Tum..",
+        image : "https://www.pagalworld.com.se/siteuploads/thumb/sft134/66592_4.jpg",
+        song : "https://www.pagalworld.com.se/files/download/id/66592"
     },
 ];
 
