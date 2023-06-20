@@ -7,17 +7,17 @@ let SongDetail = [
     {
         title : "Bholi si Surat",
         image : "Images/download.jpeg",
-        song : "Audio/Bholi Si Surat Aankhon Me Masti  ( New Version ) Latest Song _ Amitesh Kushwaha (320 kbps).mp3"
+        song : "https://cdn.pagalworld.us/songs/new/192/03%20-%20Bholi%20Si%20Surat%20-%20DTPH%201997.mp3"
     },
     {
         title : "Falak Tak Chal",
         image : "Images/Falak.jpg",
-        song : "Audio/Falak Tak Chal.wav"
+        song : "https://pagaliworld.com/files/download/id/4938"
     },
     {
         title : "Desh Mera",
         image : "Images/I0-IiiVgvyU-HQ.webp",
-        song : "Audio/O Desh Mere (New Version) _ Amitesh Kushwaha (320 kbps).mp3"
+        song : "https://www.pagalworld.com.se/files/download/id/3254"
     },
     {
         title : "Kajra Mohabat Wala",
