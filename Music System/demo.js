@@ -7,7 +7,7 @@ let SongDetail = [
     {
         title : "Bholi si Surat",
         image : "Images/download.jpeg",
-        song : "https://cdn.pagalworld.us/songs/new/192/03%20-%20Bholi%20Si%20Surat%20-%20DTPH%201997.mp3"
+        song : "https://pagalsong.in/uploads/systemuploads/mp3/Dil%20To%20Pagal%20Hai/Bholi%20Si%20Surat.mp3"
     },
     {
         title : "Falak Tak Chal",
