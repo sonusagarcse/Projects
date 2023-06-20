@@ -19,7 +19,7 @@ body {
   box-shadow: 3px -3px 20px #fff inset, -3px 3px 20px #fff inset;
   position: absolute;
   border-radius: 20px;
-  height: 90%;
+  height: 80%;
   min-width: 320px;
   display: flex;
   flex-direction: column;
