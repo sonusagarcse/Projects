@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+        #main {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #name {
+            position: absolute;
+            margin-top: 20px;
+            font-size: 1.6rem;
+            text-decoration: underline rgb(255, 0, 255);
+            text-align: center;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="name">
+        </div>
+        <img src="pRINCE bIRTHDAY cERTIFICATE.jpg" alt="" height="300px">
+    </div>
+    <button onclick="download()">Download</button>
+    <script src="html2canvas.js"></script>
+    <script>
+        let name = localStorage.getItem("inputValue");
+        let place = document.getElementById('name');
+        place.innerHTML = name;
+
+
+        function download() {
+
+            // Convert the div to image (canvas)
+            html2canvas(document.getElementById("main")).then(function (canvas) {
+        
+                // Get the image data as JPEG and 0.9 quality (0.0 - 1.0)
+                let URL = canvas.toDataURL("image/jpeg", 1);
+
+                downloadImage(URL);
+                
+                // function for download image 
+                async function downloadImage(URL) {
+                fetch(URL, {
+                    mode : 'no-cors',
+                })
+                    .then(response => response.blob())
+                    .then(blob => {
+                    let blobUrl = window.URL.createObjectURL(blob);
+                    let a = document.createElement('a');
+                    a.download = URL.replace(/^.*[\\\/]/, '');
+                    a.href = blobUrl;
+                    document.body.appendChild(a);
+                    a.click();
+                    a.remove();
+                })
+                }
+            });
+
+
+
+        }
+
+    </script>
+</body>
+</html>
