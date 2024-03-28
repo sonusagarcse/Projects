@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@400;500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: rgb(227, 224, 224);
+  font-family: poppins;
+}
+body {
+  background-color: #2b2a2a;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body .top p {
+  text-align: center;
+  top: 0px;
+  /* background-color: #e37616; */
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  width: 200px;
+  height: 100%;
+  color: white;
+  padding: 5px 0px 0px 0px;
+}
+
+body .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 40px;
+  width: 400px;
+}
+
+body .top select {
+  display: flex;
+}
+
+.container {
+  background: linear-gradient(#5b2812, #2fd8bf);
+  padding: 80px;
+  width: 600px;
+}
+
+.container .dabba_1 {
+  padding: 10px;
+}
+
+.container .dabba_1 .header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.container .dabba_1 .header img {
+  width: 140px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 20px rgb(233, 217, 0), -3px -3px 20px rgb(255, 217, 0);
+}
+
+.container .dabba_1 .header p {
+  margin: -5px;
+  font-size: 12px;
+  color: #e3e8be;
+}
+
+.share1 {
+  background-color: #e6e5e5;
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.share1 .links {
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+.icon1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  flex-direction: column;
+}
+
+.share1 .links .icon1 p {
+  font-size: .8rem;
+}
+
+.share1 .links .icon1 i {
+  background-color: #e37616;
+  padding: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.share1 .links .icon1 i:hover {
+  background-color: #cf6b13;
+}
+
+.share1 .links .icon1 i,
+p {
+  color: rgb(0, 0, 0);
+}
+
+/* share 2 box style  */
+
+.share2 {
+  background-color: #e3e8be;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.share2 .con_1 {
+  background-color: #fff;
+  margin: 15px;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.share2 .con_1 i {
+  color: #2b2a2a;
+  background-color: #e37616;
+  padding: 15px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+/* footer of 1st div  */
+
+.footer_1 {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.footer_1 .share_no {
+  margin: 40px 0px 20px 0px;
+}
+.footer_1 .share_no input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 10px;
+  color: #000;
+  font-size: 20px;
+}
+.footer_1 .share_no button {
+  border-radius: 10px;
+  border: none;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 20px;
+  margin-left: -20px;
+  background-color: #e37616;
+  box-shadow: 2px 2px 12px #e37616, -2px -2px 12px #e37616;
+  cursor: pointer;
+}
+.footer_1 .share_no button:active {
+  transform: scale(0.9);
+}
+
+select {
+  background-color: rgba(10, 10, 10, 0.2);
+  border: none;
+  padding: 10px;
+  backdrop-filter: blur(10px);
+  margin: 20px 0px;
+}
+.box_btn {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.box_btn button {
+  background-color: #fff;
+  color: #e37616;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: 1px 1px 5px #0a0a0a, -1px -1px 5px #000000;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_btn button i {
+  color: #e37616;
+  margin: 5px;
+  font-size: 20px;
+}
+
+#share_btn {
+  width: 150px;
+}
+
+.box_social {
+  margin-top: 20px;
+}
+.box_social .icons {
+  padding: 20px;
+}
+.box_social .icons a i {
+  color: #000;
+  font-size: 30px;
+  margin: 0px 15px;
+  transition: 0.5s;
+}
+.box_social .icons a i:hover {
+  color: #e37616;
+}
+
+hr {
+  height: 5px;
+  margin: 30px 0px;
+  background-color: #d9e316;
+  border-radius: 50%;
+}
+
+.dabba2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20px;
+  text-align: center;
+}
+.dabba2 h4 {
+  background-color: #e37616;
+  padding: 10px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dabba2 img {
+  padding: 20px 0px;
+}
+
+.dabba3 {
+  margin: 20px 0px;
+}
+
+.dabba3 p {
+  padding: 20px;
+  font-size: 15px;
+}
+
+/* dabba4 offers for you  */
+.dabba4 {
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 0px 10px 0px;
+}
+
+.dabba4 h4 {
+  margin-bottom: 20px;
+}
+.dabba4 .offer_1 {
+  background-color: #dbd6d6;
+  padding: 20px 10px;
+}
+
+.dabba4 .offer_1 h2 {
+  font-size: 70px;
+  color: #000;
+}
+.dabba4 .offer_1 p {
+  font-size: 12px;
+  margin-top: -15px;
+}
+
+.dabba4 .offer_1 .ebquiry_btn button {
+  background-color: #e37616;
+  border: none;
+  padding: 5px 30px;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.t-shirt img {
+  margin-top: -30px;
+}
+
+/* dabba5 youtube videos  */
+.dabba5 {
+  margin-top: 20px;
+}
+
+.dabba5 .iframe {
+  padding: 10px;
+  gap: 20px;
+}
+.dabba5 .iframe iframe {
+  border-radius: 20px;
+}
+
+/* dabba6 image gallery  */
+
+.dabba6 {
+  margin-top: 20px;
+}
+
+/* payment info box  */
+
+.payment {
+  margin-top: 20px;
+  display: block;
+}
+
+.payment .con_1 {
+  background-color: #e8e5e5;
+}
+
+/* contact us */
+
+.contact_us {
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.contact_us h4 {
+  background-color: #000;
+}
+
+.contact_us input {
+  width: 100%;
+  padding: 5px 0px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 5px solid #e37616;
+  margin: 10px 0px;
+  outline: none;
+  color: #000;
+}
+
+.contact_us form {
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-bottom: 5px solid #e37616;
+  color: #000;
+  outline: none;
+}
+
+input[type="submit"] {
+  background-color: #e37616;
+  color: white;
+  font-size: 20px;
+}
+
+.footer {
+  padding: 5px;
+}
